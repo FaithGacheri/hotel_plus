@@ -1,10 +1,10 @@
 import './App.css';
-
+import HomePage from "./components/HomePage"
 function App() {
   return (
     <div className="App">
        <div id='container'>
-       <h1>Hotel plus</h1>
+       <HomePage />
        </div>
     </div>
   );
