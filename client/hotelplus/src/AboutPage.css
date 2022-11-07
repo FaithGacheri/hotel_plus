@@ -25,22 +25,42 @@
 }
 #about-heading{
   color: var(--dark-color);
-  margin-left: 30%;
+  margin-left: 34%;
   margin-top: 5%;
+  font-size: xx-large;
 }
 #zero-all{
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
+  background-color:rgb(237, 82, 4);
   margin-left: 15%;
   margin-top: 2%;
   width: 3%;
   border-radius: 15px 15px;
   color: var(--light-color);
 }
-#about-hotel-img{
-  height: 380px;
-  width: 25%;
-  margin-left: 65%;
-  margin-top: -50% ;
-  border-radius: 10%;
-  
+#zero-all:hover{
+  transform: scale(1.5); 
+  color: black;
+}
+.about-hotel-img {
+  perspective: 9000px;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+}
+.about-hotel-img img {
+  transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+  box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+  transition: all .4s;
+  transform-style: preserve-3d;
+  width: 100%;
+  margin-left: 66%;
+  border-radius: 10%; 
+}
+.about-hotel-img:hover img {
+  transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
 }

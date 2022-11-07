@@ -3,6 +3,7 @@ import React from 'react'
 function AboutPage() {
 return (
 <div className='about-page'>
+
 <h2 id='about-heading'>Why You Should Choose Us.</h2>
 <p id='about-parags-main'>You Should choose us because we provide the best accomodation and we have sorted all the hotels<br /><p id='about-parags-main-in'>here based on their quality.</p> </p>
 <button id = 'zero-all'>01</button>
@@ -14,9 +15,13 @@ return (
 <button id = 'zero-all'>03</button>
 <p id='about-parags-head'>Can refund upto 100%</p>
 <p id='about-parags'>Don't worry if suddenly you have a problem and want<br />to do a refund, with us you can get a full refund</p>
-<img src="https://i.ibb.co/ccNzfr1/Hotel-Image.jpg" alt='hotel' id='about-hotel-img'></img>
+{/* <img src="https://i.ibb.co/ccNzfr1/Hotel-Image.jpg" alt='hotel' id='about-hotel-img'></img> */}
+  <div class="about-hotel-img">
+    <img src="https://i.ibb.co/ccNzfr1/Hotel-Image.jpg" class="img" alt=""></img>
+</div>
 
 </div>
+
 )
 }
 
