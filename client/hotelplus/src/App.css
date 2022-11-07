@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap");
+:root {
+	--primary-color: #2766cc;
+	--secondary-color: #1198f5;
+	--light-color: #828282;
+	--dark-color: #3e4854;
+	--icon-color: #89c24a;
+	--input-backcolor: #4e4f50;
+	--posttext-color: #f0f8ff;
+	--reaction-icons-color: #545a5f;
+}
+
+@media (min-width: 1240px) {
+  #container {max-width: 1290px !important;  
+    margin: auto; 
+    height: 100%;
+  
+  }
+
+}
