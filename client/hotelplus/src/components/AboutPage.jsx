@@ -20,6 +20,7 @@ return (
     <img src="https://i.ibb.co/ccNzfr1/Hotel-Image.jpg" class="img" alt=""></img>
 </div>
 
+
 </div>
 
 )
