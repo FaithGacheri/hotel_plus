@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Slider.css";
 import data from "../data";
+import "../styles/Slider.css"
 
 const Slider = () => {
   const [people] = useState(data);
