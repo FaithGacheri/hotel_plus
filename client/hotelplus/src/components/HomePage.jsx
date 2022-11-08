@@ -1,27 +1,24 @@
-import React from 'react'
-import AboutPage from './AboutPage'
-// import LogIn from './LogIn'
-
-
+import React from "react";
+import WelcomeSection from "./WelcomeSection";
+import AboutPage from "./AboutPage";
 function HomePage() {
-  return (
-    <div>
-      <h1>Hello World</h1>
-        {/* This is our home page */}
-        {/* Denis Compontent */}
+	return (
+		<div>
+			{/* This is our home page */}
+			<WelcomeSection />
 
         {/* Ian Component */}
         <AboutPage />
         {/* <LogIn /> */}
+			{/* Ian Component */}
 
-        {/* Imanuels Component */}
+			{/* Imanuels Component */}
 
-        {/* Joseph Component */}
+			{/* Joseph Component */}
 
-        {/* Faith Component */}
-
-    </div>
-  )
+			{/* Faith Component */}
+		</div>
+	);
 }
 
-export default HomePage
+export default HomePage;

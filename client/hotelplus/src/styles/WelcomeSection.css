@@ -1,0 +1,110 @@
+:root {
+	--primary-color: #1c2534;
+	--secondary-color: #f76926;
+	--light-color: #ffffff;
+	--dark-color: #202020;
+	--trasparent-color: #fccebc;
+	--grey-color: #b4bbc8;
+}
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+}
+.logo {
+	/* background-color: red; */
+	margin-top: 10px;
+}
+.logo > img {
+	height: 50px;
+	/* width: 100px; */
+	object-fit: cover;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.links-address {
+	color: var(--grey-color) !important;
+	text-decoration: none;
+}
+
+.active {
+	color: var(--light-color) !important;
+	font-weight: 500;
+}
+.login-btn {
+	padding: 10px 15px;
+	font-size: 15px;
+	background-color: var(--secondary-color);
+	border: none;
+	border-radius: 5px;
+}
+.login-btn:hover {
+	color: var(--secondary-color) !important;
+	box-shadow: var(--secondary-color) 0px 1px 2px 0px,
+		var(--secondary-color) 0px 2px 6px 2px;
+	cursor: pointer;
+}
+
+.discover-text > h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+.login-btn .login-btn-address {
+	color: var(--light-color) !important;
+	font-weight: 800 !important;
+	text-decoration: none;
+}
+.discover-section {
+	margin-top: 50px !important;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between !important;
+	align-items: center;
+}
+.discover-dsc {
+	width: 50%;
+}
+.discover-dsc > p {
+	line-height: 30px;
+	font-weight: 300;
+	color: var(--grey-color);
+	font-size: 18px;
+}
+.user-hotel {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	width: 55%;
+}
+.discover {
+	background-color: var(--trasparent-color);
+}
+.discover .login-btn-address {
+	color: var(--primary-color) !important;
+}
+
+.sliding-image {
+	/* width: 500px !important; */
+	object-fit: cover;
+}
+.image-slider {
+	width: 100%;
+	background-color: red;
+	/* margin: 0 auto !important; */
+	margin-top: 50px !important;
+	/* position: relative; */
+}
+
+.width-slider {
+	background-color: red !important;
+	/* width: 300; */
+}
