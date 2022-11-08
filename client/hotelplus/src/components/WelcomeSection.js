@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "../img/logo.png";
 import { Link } from "react-router-dom";
-import Button from "@mui/material/Button";
+import "../styles/WelcomeSection.css";
+// import Button from "@mui/material/Button";
 function WelcomeSection() {
 	return (
 		<div className="welcome-section">
@@ -11,7 +12,7 @@ function WelcomeSection() {
 				</div>
 				<div className="nav-links">
 					<div className="links">
-						<Link to="/" className="links-address">
+						<Link to="/" className="links-address active">
 							Home
 						</Link>
 					</div>
@@ -37,11 +38,11 @@ function WelcomeSection() {
 					</div>
 				</div>
 				<div className="login-btn">
-					<Button>
+					<button>
 						<Link to="/login" className="login-btn-address">
 							Login
 						</Link>
-					</Button>
+					</button>
 				</div>
 			</div>
 		</div>
