@@ -45,6 +45,29 @@ function WelcomeSection() {
 					</button>
 				</div>
 			</div>
+			<div className="discover-section">
+				<div className="discover-text">
+					<h1>Discover The Best Hotels & Resorts to Stay</h1>
+				</div>
+				<div className="discover-dsc">
+					<p>
+						We provide a variety of the best loding accomodations for those of
+						you need it. Dont't Worry about the Quality of the service.
+					</p>
+					<div className="user-hotel">
+						<button className="login-btn">
+							<Link to="/rooms" className="login-btn-address">
+								Add Hotel
+							</Link>
+						</button>
+						<button className="login-btn discover">
+							<Link to="/rooms" className="login-btn-address">
+								Discover
+							</Link>
+						</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }
