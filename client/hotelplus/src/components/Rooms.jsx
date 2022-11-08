@@ -5,7 +5,7 @@ import Room3 from '../components/img/room3.jpg'
 import Room4 from '../components/img/room4.jpg'
 import Room5 from '../components/img/room5.jpg'
 import Room6 from '../components/img/room6.jpg'
-import './Room.css'
+import '../styles/Room.css'
 
 
 function Rooms() {
