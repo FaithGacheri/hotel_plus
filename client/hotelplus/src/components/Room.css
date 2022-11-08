@@ -1,0 +1,64 @@
+:root {
+	--primary-color: #1c2534;
+	--secondary-color: #f76926;
+	--light-color: #ffffff;
+	--dark-color: #202020;
+	--trasparent-color: #fccebc;
+	--grey-color: #b4bbc8;
+}
+
+button {
+background: #f76926;
+padding-left: 30px;
+padding-right: 30px;
+padding-top: 5px;
+padding-bottom: 5px;
+margin: 6px;
+color: #ffffff;
+border-radius: 10px;
+}
+
+#roomContainer {
+	display: flex;
+
+}
+.rooms {
+background-color: #ffffff !important;
+height: 100vh !important;
+}
+
+img {
+	border-radius: 15px;
+	width:95%;
+	height: 70%;
+	
+}
+h5,p,h2, .p {
+	color: #202020 !important;
+}
+
+.p {
+	padding: 17px;	
+}
+
+h1, .p {
+	text-align: center;
+}
+
+button:hover {
+	padding-right: 30px;
+	background:#1c2534;
+
+  }
+
+.room {
+	background-color:#f9f8f8 ;
+	border-radius: 40px;
+	padding: 5px;
+	margin: 9px;
+}
+
+.room:hover {
+	transform:scale(1.2);
+}
+  
