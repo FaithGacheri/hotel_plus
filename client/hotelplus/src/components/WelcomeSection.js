@@ -2,8 +2,23 @@ import React from "react";
 import Image from "../img/logo.png";
 import { Link } from "react-router-dom";
 import "../styles/WelcomeSection.css";
+import SimpleImageSlider from "react-simple-image-slider";
 // import Button from "@mui/material/Button";
 function WelcomeSection() {
+	const images = [
+		{
+			url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+		},
+		{
+			url: "https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+		},
+		{
+			url: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+		},
+		{
+			url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+		},
+	];
 	return (
 		<div className="welcome-section">
 			<div className="navbar">
@@ -66,6 +81,17 @@ function WelcomeSection() {
 							</Link>
 						</button>
 					</div>
+				</div>
+			</div>
+			<div className="image-slider">
+				<div className="center">
+					<SimpleImageSlider
+						width={1290}
+						height={600}
+						images={images}
+						showBullets={true}
+						showNavs={true}
+					/>
 				</div>
 			</div>
 		</div>
