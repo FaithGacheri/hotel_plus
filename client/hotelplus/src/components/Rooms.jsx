@@ -1,10 +1,10 @@
 import React from 'react'
-import Room1 from '../components/image/room1.jpg'
-import Room2 from '../components/image/room2.jpg'
-import Room3 from '../components/image/room3.jpg'
-import Room4 from '../components/image/room4.jpg'
-import Room5 from '../components/image/room5.jpg'
-import Room6 from '../components/image/room6.jpg'
+import Room1 from '../components/img/room1.jpg'
+import Room2 from '../components/img/room2.jpg'
+import Room3 from '../components/img/room3.jpg'
+import Room4 from '../components/img/room4.jpg'
+import Room5 from '../components/img/room5.jpg'
+import Room6 from '../components/img/room6.jpg'
 import './Room.css'
 
 
