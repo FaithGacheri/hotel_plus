@@ -37,10 +37,10 @@ function WelcomeSection() {
 						</Link>
 					</div>
 				</div>
-				<div className="login-btn">
-					<button>
+				<div className="login-btnr">
+					<button className="login-btn">
 						<Link to="/login" className="login-btn-address">
-							Login
+							Sign in
 						</Link>
 					</button>
 				</div>
