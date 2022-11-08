@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutPage from './AboutPage'
-import LogIn from './LogIn'
+// import LogIn from './LogIn'
 
 
 function HomePage() {
@@ -12,7 +12,7 @@ function HomePage() {
 
         {/* Ian Component */}
         <AboutPage />
-        <LogIn />
+        {/* <LogIn /> */}
 
         {/* Imanuels Component */}
 

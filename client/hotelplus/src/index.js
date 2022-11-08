@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './AboutPage.css';
-import './components/LogIn.css'
 import App from './App';
 
 

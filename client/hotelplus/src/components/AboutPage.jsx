@@ -1,4 +1,7 @@
 import React from 'react'
+import  '../styles/AboutPage.css'
+import  '../styles/LogIn.css'
+
 
 function AboutPage() {
 return (

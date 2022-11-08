@@ -162,3 +162,7 @@ input[type="submit"]:active
 {
 	opacity: 0.8;
 }
+#h1-login-form{
+	margin-left: 26%;
+	color: rgb(129, 129, 241);
+  }
