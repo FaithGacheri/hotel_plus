@@ -4,7 +4,7 @@ import Slider from './Slider'
 function HomePage() {
   return (
     <div>
-      <h1>Hello World</h1>
+     
         {/* This is our home page */}
         {/* Denis Compontent */}
 
