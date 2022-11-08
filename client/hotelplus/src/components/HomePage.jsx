@@ -1,4 +1,5 @@
 import React from 'react'
+import Slider from './Slider'
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
         {/* Imanuels Component */}
 
         {/* Joseph Component */}
+        <Slider/>
 
         {/* Faith Component */}
 
