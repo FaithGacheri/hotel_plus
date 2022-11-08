@@ -50,8 +50,8 @@
   perspective: 9000px;
   width: 30%;
   position: absolute;
-  left: 50%;
-  top:160%;
+  left: 45%;
+  top:137%;
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
 }

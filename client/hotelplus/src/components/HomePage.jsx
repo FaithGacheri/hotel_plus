@@ -1,18 +1,14 @@
 import React from "react";
 import WelcomeSection from "./WelcomeSection";
 import AboutPage from "./AboutPage";
+
+import Rooms from './Rooms';
 function HomePage() {
 	return (
 		<div>
-			{/* This is our home page */}
-			<WelcomeSection />
-
-        {/* Ian Component */}
-        <AboutPage />
-        {/* <LogIn /> */}
-			{/* Ian Component */}
-
-			{/* Imanuels Component */}
+		<WelcomeSection />
+      	<AboutPage />
+        <Rooms />
 
 			{/* Joseph Component */}
 
