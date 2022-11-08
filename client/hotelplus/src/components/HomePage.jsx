@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer';
 
 function HomePage() {
   return (
@@ -14,8 +15,9 @@ function HomePage() {
         {/* Joseph Component */}
 
         {/* Faith Component */}
-
+         <Footer /> 
     </div>
+     
   )
 }
 
