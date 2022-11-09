@@ -87,6 +87,7 @@ function WelcomeSection() {
 			</div>
 			<div className="image-slider">
 				<div className="center">
+					<div className="overlay"></div>
 					<SimpleImageSlider
 						width={1290}
 						height={600}

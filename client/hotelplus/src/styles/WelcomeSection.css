@@ -129,7 +129,8 @@
 
 .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
 	/* background-color: var(--primary-color) !important; */
-	/* background-color: #f7682634 !important; */
+	background-color: inherit !important;
+	border-radius: 10px;
 
 	margin: 0 auto !important;
 	/* width: 35%; */
@@ -137,4 +138,14 @@
 }
 #alert-dialog-description {
 	background-color: hidden !important;
+}
+.center {
+	position: relative;
+}
+.overlay {
+	position: absolute;
+	z-index: 1;
+	background-color: #1c25348f !important;
+	width: 100%;
+	height: 100%;
 }
