@@ -3,7 +3,8 @@ import WelcomeSection from './WelcomeSection';
 import AboutPage from './AboutPage';
 import Rooms from './Rooms';
 import Slider from './Slider'
-// import Footer from './Footer';
+import Footer from './Footer';
+
 
 
 function HomePage() {
@@ -14,10 +15,10 @@ function HomePage() {
       <AboutPage />
       <Rooms />
       <Slider />
-      {/* <Footer /> */}
+      <Footer />
      
-
-    </div>
+</div>
+     
   )
 }
 
