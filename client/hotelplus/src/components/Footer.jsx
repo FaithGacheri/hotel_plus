@@ -11,7 +11,7 @@ function Footer() {
         </div>
 
         {/* <RiTwitterLine/> */}
-<section className="room">
+<section className="room-det">
 <ul>
 <li><h3 id='details'>Rooms</h3></li>
 <li><a href="/">Standard</a></li>
