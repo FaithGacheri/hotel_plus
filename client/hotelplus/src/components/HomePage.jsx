@@ -1,13 +1,18 @@
 import React from "react";
-import Slider from "./Slider";
-
+import WelcomeSection from "./WelcomeSection";
+import AboutPage from "./AboutPage";
 import Rooms from "./Rooms";
+import Slider from "./Slider";
+import Footer from "./Footer";
+
 function HomePage() {
 	return (
 		<div>
+			<WelcomeSection />
+			<AboutPage />
+			<Rooms />
 			<Slider />
-
-			{/* Faith Component */}
+			<Footer />
 		</div>
 	);
 }
