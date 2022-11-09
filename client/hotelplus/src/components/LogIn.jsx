@@ -5,7 +5,7 @@ function LogIn() {
 
     <div class="box">
 		<form autocomplete="off" id="my-login-form">
-      <h1 id='h1-login-form'>Karibuni!</h1>
+     
 			<h2 id="h2-login-form">Sign in</h2>
 			<div class="inputBox">
 				<input type="text" required="required" id='login-input'></input>
