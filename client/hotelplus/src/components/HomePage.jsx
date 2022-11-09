@@ -8,7 +8,6 @@ import Footer from "./Footer";
 function HomePage() {
 	return (
 		<div>
-			<WelcomeSection />
 			<AboutPage />
 			<Rooms />
 			<Slider />
