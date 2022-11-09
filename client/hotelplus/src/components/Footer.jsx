@@ -9,8 +9,11 @@ function Footer() {
            <h2 id='intro'> HOTELPLUS</h2>
            <p id='paragraph'>The best booking platform in the world</p>
            
+           <a href="/" class="fa fa-facebook" id='footerlogo'></a>
+           <a href="/" class="fa fa-twitter" id='footerlogo'></a>
+           <a href="/" class="fa fa-whatsapp" id='footerlogo'></a>
         </div>
- 
+
         {/* <RiTwitterLine/> */}
 <section className="room-det">
 <ul>

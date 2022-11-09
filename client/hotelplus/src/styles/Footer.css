@@ -80,3 +80,32 @@ color: var(--grey-color);
   color: var(--light-color);
   margin-top: 30px;
  }
+
+ /* Facebook */
+.fa-facebook {
+  /* background: #0047df; */
+  color:var(--dark-color);
+}
+
+/* Twitter */
+.fa-twitter {
+  /* background: #55ACEE; */
+  color:var(--dark-color);
+}
+
+.fa-whatsapp {
+  /* background: #44c51c; */
+  color:var(--dark-color);
+}
+
+#footerlogo{
+  margin-top: 10%;
+  /* margin-left: -13%; */
+  padding: 0%;
+
+}
+
+/* #footerlogo:hover{
+ transform: scale(1.5);
+ 
+} */
