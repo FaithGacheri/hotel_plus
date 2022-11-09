@@ -5,7 +5,6 @@ import Slider from './Slider'
 
 
 
-
 function HomePage() {
   return (
    
@@ -14,7 +13,7 @@ function HomePage() {
       <AboutPage />
       <Rooms />
       <Slider />
-   
+     
      
 </div>
      
