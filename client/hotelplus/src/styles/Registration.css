@@ -13,7 +13,8 @@
     background-size: cover; */
   }
 
-  .container{
+  
+.container{
     width: 100%;
     max-width: 650px;
     background: rgb(16, 16, 82);
@@ -121,4 +122,6 @@
         width: 0;
     }
   }
+  
+  
   

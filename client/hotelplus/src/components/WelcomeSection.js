@@ -3,6 +3,8 @@ import Image from "../img/logo.png";
 import { Link } from "react-router-dom";
 import "../styles/WelcomeSection.css";
 import SimpleImageSlider from "react-simple-image-slider";
+import BusinessIcon from "@mui/icons-material/Business";
+import AlertDialog from "./dialogs/LoginDialog";
 // import Button from "@mui/material/Button";
 function WelcomeSection() {
 	const images = [
@@ -55,7 +57,10 @@ function WelcomeSection() {
 				<div className="login-btnr">
 					<button className="login-btn">
 						<Link to="/login" className="login-btn-address">
-							Sign in
+							<div className="btn-icon">
+								<BusinessIcon className="icon" />
+								Add Hotel
+							</div>
 						</Link>
 					</button>
 				</div>
@@ -70,14 +75,11 @@ function WelcomeSection() {
 						you need it. Dont't Worry about the Quality of the service.
 					</p>
 					<div className="user-hotel">
-						<button className="login-btn">
-							<Link to="/rooms" className="login-btn-address">
-								Add Hotel
-							</Link>
-						</button>
+						<AlertDialog />
+
 						<button className="login-btn discover">
 							<Link to="/rooms" className="login-btn-address">
-								Discover
+								Sign Up
 							</Link>
 						</button>
 					</div>
@@ -85,11 +87,12 @@ function WelcomeSection() {
 			</div>
 			<div className="image-slider">
 				<div className="center">
+					<div className="overlay"></div>
 					<SimpleImageSlider
 						width={1290}
 						height={600}
 						images={images}
-						showBullets={true}
+						showBullets={false}
 						showNavs={true}
 					/>
 				</div>
