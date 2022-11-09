@@ -14,7 +14,7 @@ function Rooms() {
     <div className='rooms'>
       <h1>The Best Hotel Rooms for you</h1>
       <div className='p' >This are some of the hotels we highly recommend for you. We guarantee the quality of the services, the food, the hotel area and various other aspects.</div >
-      
+      {/* Adding fake change */}
       <div id='roomContainer'>
         <div className='room'>
           <img src={Room1} alt="Room1" />
