@@ -14,7 +14,6 @@ function App() {
 						<Routes>
 							<Route path="/" element={<HomePage />} />
 						</Routes>
-						<LogIn />
 						<Footer />
 					</div>
 				</div>

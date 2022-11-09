@@ -119,3 +119,22 @@
 	color: var(--primary-color) !important;
 	margin-right: 5px;
 }
+.btn-icon .login-btn {
+	font-weight: 600;
+}
+
+.btn-icon .login-btn:hover {
+	color: var(--light-color) !important;
+}
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+	/* background-color: var(--primary-color) !important; */
+	/* background-color: #f7682634 !important; */
+
+	margin: 0 auto !important;
+	/* width: 35%; */
+	max-width: none !important;
+}
+#alert-dialog-description {
+	background-color: hidden !important;
+}

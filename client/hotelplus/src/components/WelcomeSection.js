@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "../styles/WelcomeSection.css";
 import SimpleImageSlider from "react-simple-image-slider";
 import BusinessIcon from "@mui/icons-material/Business";
+import AlertDialog from "./dialogs/LoginDialog";
 // import Button from "@mui/material/Button";
 function WelcomeSection() {
 	const images = [
@@ -74,11 +75,8 @@ function WelcomeSection() {
 						you need it. Dont't Worry about the Quality of the service.
 					</p>
 					<div className="user-hotel">
-						<button className="login-btn">
-							<Link to="/rooms" className="login-btn-address">
-								sign In
-							</Link>
-						</button>
+						<AlertDialog />
+
 						<button className="login-btn discover">
 							<Link to="/rooms" className="login-btn-address">
 								Sign Up
