@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Footer.css';
+
 function Footer() {
   return (
     <div> <section className="footer">
@@ -9,7 +10,7 @@ function Footer() {
            <p id='paragraph'>The best booking platform in the world</p>
            
         </div>
-
+ 
         {/* <RiTwitterLine/> */}
 <section className="room-det">
 <ul>
