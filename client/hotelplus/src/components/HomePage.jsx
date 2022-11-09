@@ -1,25 +1,15 @@
-import React from 'react'
-import Slider from './Slider'
+import React from "react";
+import Slider from "./Slider";
 
-import Rooms from './Rooms';
+import Rooms from "./Rooms";
 function HomePage() {
-  return (
-    <div>
-     
-        {/* This is our home page */}
-        {/* Denis Compontent */}
+	return (
+		<div>
+			<Slider />
 
-			{/* Joseph Component */}
-
-        {/* Imanuels Component */}
-
-        {/* Joseph Component */}
-        <Slider/>
-
-        {/* Faith Component */}
-
-    </div>
-  )
+			{/* Faith Component */}
+		</div>
+	);
 }
 
 export default HomePage;
