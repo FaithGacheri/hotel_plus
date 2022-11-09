@@ -10,12 +10,7 @@ function Footer() {
            
         </div>
 
-        
-
-      
-
-
-    {/* <RiTwitterLine/> */}
+        {/* <RiTwitterLine/> */}
 <section className="room">
 <ul>
 <li><h3 id='details'>Rooms</h3></li>
@@ -49,8 +44,7 @@ function Footer() {
 <section className="news">
 <ul>
 <li><h3 id='details'>Newsletter</h3></li>
-<li><a href="/">Subscribe and get the latest updat
-es</a></li>
+<li><a href="/">Subscribe and get the latest updates</a></li>
 <input id='email' type="text" 
 
 placeholder="Enter your email"/>
