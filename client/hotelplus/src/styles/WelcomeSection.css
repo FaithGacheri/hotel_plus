@@ -109,3 +109,13 @@
 	background-color: red !important;
 	/* width: 300; */
 }
+
+.btn-icon {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+}
+.icon {
+	color: var(--primary-color) !important;
+	margin-right: 5px;
+}
