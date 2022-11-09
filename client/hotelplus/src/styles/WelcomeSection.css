@@ -84,7 +84,7 @@
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
-	width: 60%;
+	width: 50%;
 }
 .discover {
 	background-color: var(--trasparent-color);

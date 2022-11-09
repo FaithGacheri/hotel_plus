@@ -5,6 +5,7 @@ import "../styles/WelcomeSection.css";
 import SimpleImageSlider from "react-simple-image-slider";
 import BusinessIcon from "@mui/icons-material/Business";
 import AlertDialog from "./dialogs/LoginDialog";
+import RegistrationDialog from "./dialogs/RegistrationDialog";
 // import Button from "@mui/material/Button";
 function WelcomeSection() {
 	const images = [
@@ -77,11 +78,7 @@ function WelcomeSection() {
 					<div className="user-hotel">
 						<AlertDialog />
 
-						<button className="login-btn discover">
-							<Link to="/rooms" className="login-btn-address">
-								Sign Up
-							</Link>
-						</button>
+						<RegistrationDialog />
 					</div>
 				</div>
 			</div>

@@ -14,7 +14,23 @@
 	cursor: pointer;
 	position: relative;
 	width: 400px;
+
 	height: 420px;
+	background: var(--primary-color) !important;
+	border-radius: 8px;
+	overflow: hidden;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	margin: 0 auto;
+	/* margin-left: 40%; */
+	margin-top: 3%;
+}
+#r-box {
+	cursor: pointer;
+	position: relative;
+	width: 700px;
+
+	height: 500px;
 	background: var(--primary-color) !important;
 	border-radius: 8px;
 	overflow: hidden;
