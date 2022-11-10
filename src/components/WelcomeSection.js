@@ -5,6 +5,12 @@ import "../styles/WelcomeSection.css";
 import SimpleImageSlider from "react-simple-image-slider";
 import BusinessIcon from "@mui/icons-material/Business";
 import AlertDialog from "./dialogs/LoginDialog";
+import RegistrationDialog from "./dialogs/RegistrationDialog";
+import { TypeAnimation } from "react-type-animation";
+import LocalTaxiTwoToneIcon from "@mui/icons-material/LocalTaxiTwoTone";
+import BrunchDiningTwoToneIcon from "@mui/icons-material/BrunchDiningTwoTone";
+import HeatPumpTwoToneIcon from "@mui/icons-material/HeatPumpTwoTone";
+import CameraIndoorTwoToneIcon from "@mui/icons-material/CameraIndoorTwoTone";
 // import Button from "@mui/material/Button";
 function WelcomeSection() {
 	const images = [
@@ -44,13 +50,13 @@ function WelcomeSection() {
 						</Link>
 					</div>
 					<div className="links">
-						<Link to="/services" className="links-address">
+						<Link to="/contact" className="links-address">
 							Services
 						</Link>
 					</div>
 					<div className="links">
-						<Link to="/contacts" className="links-address">
-							Contact
+						<Link to="/contact" className="links-address">
+							Contact Us
 						</Link>
 					</div>
 				</div>
@@ -77,17 +83,70 @@ function WelcomeSection() {
 					<div className="user-hotel">
 						<AlertDialog />
 
-						<button className="login-btn discover">
-							<Link to="/rooms" className="login-btn-address">
-								Sign Up
-							</Link>
-						</button>
+						<RegistrationDialog />
 					</div>
 				</div>
 			</div>
 			<div className="image-slider">
 				<div className="center">
-					<div className="overlay"></div>
+					<div className="overlay">
+						<TypeAnimation
+							sequence={[
+								"Welcome to HotelPlus 5 Star World Hotels",
+								1000,
+								"Welcome to HotelPlus With Best Accomodation",
+								1000,
+								"Welcome to HotelPlus Best Services ",
+								1000,
+								"Book Yours Today with a Simple Registration",
+								1000,
+							]}
+							wrapper="div"
+							cursor={true}
+							repeat={Infinity}
+							style={{ fontSize: "5em", fontFamily: "Cormorant Garamond" }}
+						/>
+					</div>
+					<div className="more-on-hotel">
+						<div className="inner-more">
+							<div className="includes">
+								<div className="more-icon">
+									<LocalTaxiTwoToneIcon
+										className="icons-more"
+										style={{ width: "100px" }}
+									/>
+									<p>Airport transfer</p>
+								</div>
+							</div>
+							<div className="includes">
+								<div className="more-icon">
+									<BrunchDiningTwoToneIcon
+										className="icons-more"
+										style={{ width: "100px" }}
+									/>
+									<p>All inclusive</p>
+								</div>
+							</div>
+							<div className="includes">
+								<div className="more-icon">
+									<HeatPumpTwoToneIcon
+										className="icons-more"
+										style={{ width: "100px" }}
+									/>
+									<p>Air-conditioned</p>
+								</div>
+							</div>
+							<div className="includes">
+								<div className="more-icon">
+									<CameraIndoorTwoToneIcon
+										className="icons-more"
+										style={{ width: "100px", fontWeight: 100, fontSize: "2em" }}
+									/>
+									<p>Under protection</p>
+								</div>
+							</div>
+						</div>
+					</div>
 					<SimpleImageSlider
 						width={1290}
 						height={600}
