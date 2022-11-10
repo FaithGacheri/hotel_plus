@@ -133,7 +133,7 @@
 	position: relative;
 	width: 100%;
 	padding: 20px 10px 10px;
-	background: transparent;
+	background: var(--light-color);
 	outline: none;
 	box-shadow: none;
 	border: none;

@@ -82,7 +82,7 @@ function Registration() {
 						<input
 							required="required"
 							id="login-input"
-							type="text"
+							type="number"
 							name="phoneNumber"
 							value={user.phoneNumber}
 							onChange={onChange}
