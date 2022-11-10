@@ -6,11 +6,13 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  color: var(--light-color);
 }
 .section {
   width: 90vw;
   margin: 5rem auto;
   max-width: 1170px;
+  background-color: var(--primary-color);
 }
 
 @media screen and (min-width: 992px) {
@@ -76,6 +78,7 @@ article h4 {
   text-transform: capitalize;
   margin-bottom: 0.75rem;
   color: hsl(209, 34%, 30%);
+  color: var(--light-color) !important;
 }
 
 .title {
@@ -95,6 +98,7 @@ article h4 {
   margin-top: 2rem;
   line-height: 2;
   color: hsl(210, 22%, 49%);
+  color: var(--light-color) !important;
 }
 
 .prev,
