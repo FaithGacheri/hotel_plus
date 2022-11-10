@@ -50,13 +50,13 @@ function WelcomeSection() {
 						</Link>
 					</div>
 					<div className="links">
-						<Link to="/services" className="links-address">
+						<Link to="/contact" className="links-address">
 							Services
 						</Link>
 					</div>
 					<div className="links">
-						<Link to="/contacts" className="links-address">
-							Contact
+						<Link to="/contact" className="links-address">
+							Contact Us
 						</Link>
 					</div>
 				</div>
