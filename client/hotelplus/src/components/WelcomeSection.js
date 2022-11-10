@@ -6,6 +6,11 @@ import SimpleImageSlider from "react-simple-image-slider";
 import BusinessIcon from "@mui/icons-material/Business";
 import AlertDialog from "./dialogs/LoginDialog";
 import RegistrationDialog from "./dialogs/RegistrationDialog";
+import { TypeAnimation } from "react-type-animation";
+import LocalTaxiTwoToneIcon from "@mui/icons-material/LocalTaxiTwoTone";
+import BrunchDiningTwoToneIcon from "@mui/icons-material/BrunchDiningTwoTone";
+import HeatPumpTwoToneIcon from "@mui/icons-material/HeatPumpTwoTone";
+import CameraIndoorTwoToneIcon from "@mui/icons-material/CameraIndoorTwoTone";
 // import Button from "@mui/material/Button";
 function WelcomeSection() {
 	const images = [
@@ -84,7 +89,64 @@ function WelcomeSection() {
 			</div>
 			<div className="image-slider">
 				<div className="center">
-					<div className="overlay">Hello</div>
+					<div className="overlay">
+						<TypeAnimation
+							sequence={[
+								"Welcome to HotelPlus 5 Star World Hotels",
+								1000,
+								"Welcome to HotelPlus With Best Accomodation",
+								1000,
+								"Welcome to HotelPlus Best Services ",
+								1000,
+								"Book Yours Today with a Simple Registration",
+								1000,
+							]}
+							wrapper="div"
+							cursor={true}
+							repeat={Infinity}
+							style={{ fontSize: "5em", fontFamily: "Cormorant Garamond" }}
+						/>
+					</div>
+					<div className="more-on-hotel">
+						<div className="inner-more">
+							<div className="includes">
+								<div className="more-icon">
+									<LocalTaxiTwoToneIcon
+										className="icons-more"
+										style={{ width: "100px" }}
+									/>
+									<p>Airport transfer</p>
+								</div>
+							</div>
+							<div className="includes">
+								<div className="more-icon">
+									<BrunchDiningTwoToneIcon
+										className="icons-more"
+										style={{ width: "100px" }}
+									/>
+									<p>All inclusive</p>
+								</div>
+							</div>
+							<div className="includes">
+								<div className="more-icon">
+									<HeatPumpTwoToneIcon
+										className="icons-more"
+										style={{ width: "100px" }}
+									/>
+									<p>Air-conditioned</p>
+								</div>
+							</div>
+							<div className="includes">
+								<div className="more-icon">
+									<CameraIndoorTwoToneIcon
+										className="icons-more"
+										style={{ width: "100px", fontWeight: 300 }}
+									/>
+									<p>Under protection</p>
+								</div>
+							</div>
+						</div>
+					</div>
 					<SimpleImageSlider
 						width={1290}
 						height={600}

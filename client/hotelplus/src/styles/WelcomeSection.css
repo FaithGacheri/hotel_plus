@@ -145,7 +145,44 @@
 .overlay {
 	position: absolute;
 	z-index: 1;
-	background-color: #1c25348f !important;
+	/* background-color: #1c25348f !important; */
+	width: 70%;
+	top: 10%;
+	left: 10%;
+	/* height: 100%; */
+}
+
+.more-on-hotel {
+	position: absolute;
+	z-index: 3;
+	bottom: 0;
+	width: 60%;
+	margin: 0 auto;
+	left: 20%;
+	z-index: 8;
+}
+.inner-more {
 	width: 100%;
-	height: 100%;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+
+.icons-more {
+	height: 100px !important;
+	font-weight: 300 !important;
+}
+.includes {
+	background-color: var(--dark-color);
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	border: 1px solid gold;
+	border-radius: 5px;
+}
+.more-icon > p {
+	color: var(--secondary-color) !important;
+	font-weight: 600;
 }
