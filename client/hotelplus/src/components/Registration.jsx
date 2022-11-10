@@ -4,75 +4,87 @@ import "../styles/Registration.css";
 function Registration() {
 	return (
 		<div class="box" id="r-box">
-			<h2 id="h2-login-form">Sign Up to HotelPlus</h2>
 			<form autocomplete="off" id="my-login-form">
+				<h2 id="h2-login-form">Sign Up to HotelPlus</h2>
 				<div class="main-user-info">
-					<div class="user-input-box">
-						{/* <!-- start first name --> */}
-						{/* <label for="fullName">Full Name</label> */}
+					<div class="inputBox">
 						<input
+							required="required"
+							id="login-input"
 							type="text"
-							id="fullName"
-							name="fullName"
-							placeholder="Enter Full Name"
-						/>
-					</div>
-					{/* <!-- end first name -->
-           <!-- username section --> */}
-					<div class="user-input-box">
-						{/* <label for="username">Username</label> */}
-						<input
-							type="text"
-							id="username"
-							name="username"
-							placeholder="Enter Username"
-						/>
-					</div>
-					{/* <!-- end username section -->
-          <!-- start email section  --> */}
-					<div class="user-input-box">
-						{/* <label for="email">Email</label> */}
-						<input
-							type="email"
-							id="email"
 							name="email"
-							placeholder="Enter Email"
-						/>
+							// value={user.email}
+							// onChange={onChange}
+						></input>
+						<span>Full Name</span>
+						<i></i>
 					</div>
-					{/* <!-- end email section -->
-          <!-- start phoneNumber section --> */}
-					<div class="user-input-box">
+					<div class="inputBox">
 						<input
+							required="required"
+							id="login-input"
 							type="text"
-							id="phoneNumber"
-							name="phoneNumber"
-							placeholder="Enter Phone Number"
-						/>
+							name="email"
+							// value={user.email}
+							// onChange={onChange}
+						></input>
+						<span>Enter User Name</span>
+						<i></i>
 					</div>
-					{/* <!-- end phoneNumber section -->
-          <!-- start password section --> */}
-					<div class="user-input-box">
+					<div class="inputBox">
+						<input
+							required="required"
+							id="login-input"
+							type="text"
+							name="email"
+							// value={user.email}
+							// onChange={onChange}
+						></input>
+						<span>Enter Email</span>
+						<i></i>
+					</div>
+					<div class="inputBox">
+						<input
+							required="required"
+							id="login-input"
+							type="text"
+							name="email"
+							// value={user.email}
+							// onChange={onChange}
+						></input>
+						<span>Phone Number</span>
+						<i></i>
+					</div>
+
+					<div class="inputBox">
 						<input
 							type="password"
-							id="password"
+							required="required"
+							id="login-input"
 							name="password"
-							placeholder="Enter Password"
-						/>
+							// value={user.password}
+							// onChange={onChange}
+						></input>
+						<span>Password</span>
+						<i></i>
 					</div>
-					{/* <!-- end password section -->
-          <!-- continue password confirmPassword --> */}
-					<div class="user-input-box">
+
+					<div class="inputBox">
 						<input
 							type="password"
-							id="confirmPassword"
-							name="confirmPassword"
-							placeholder="Confirm Password"
-						/>
+							required="required"
+							id="login-input"
+							name="password"
+							// value={user.password}
+							// onChange={onChange}
+						></input>
+						<span>Confirm Password</span>
+						<i></i>
 					</div>
-					{/* <!-- end continue password confirmPassword --> */}
 				</div>
 				<div class="gender-details-box">
-					<span class="gender-title">Gender</span>
+					<h2 id="h2-login-formr">Gender</h2>
+
 					<div class="gender-category">
 						<input type="radio" name="gender" id="male" />
 						<label for="male">Male</label>
@@ -82,11 +94,7 @@ function Registration() {
 						<label for="other">Other</label>
 					</div>
 				</div>
-				{/* <!-- gender part wadau --> */}
-				<div class="form-submit-btn">
-					<input type="submit" value="Register" />
-				</div>
-				{/* <!-- end gender--> */}
+				<input type="submit" value="Register" id="login-input"></input>
 			</form>
 		</div>
 	);

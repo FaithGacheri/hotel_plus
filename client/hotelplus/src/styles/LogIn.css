@@ -40,6 +40,18 @@
 	/* margin-left: 40%; */
 	margin-top: 3%;
 }
+#r-box::before {
+	content: "";
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 700px;
+	height: 500px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg, transparent, #cb00b6, #cb00b6);
+	animation: animate 6s linear infinite;
+}
 .box::before {
 	content: "";
 	z-index: 1;
@@ -51,6 +63,24 @@
 	transform-origin: bottom right;
 	background: linear-gradient(0deg, transparent, #cb00b6, #cb00b6);
 	animation: animate 6s linear infinite;
+}
+.r-box::after {
+	content: "";
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 700px;
+	height: 500px;
+	transform-origin: bottom right;
+	background: linear-gradient(
+		0deg,
+		transparent,
+		var(--secondary-color),
+		var(--secondary-color)
+	);
+	animation: animate 6s linear infinite;
+	animation-delay: -3s;
 }
 .box::after {
 	content: "";
@@ -82,7 +112,7 @@
 	position: absolute;
 	inset: 2px;
 	background: #28292d;
-	padding: 50px 40px;
+	padding: 30px 40px;
 	border-radius: 8px;
 	z-index: 2;
 	display: flex;
@@ -177,4 +207,11 @@ input[type="submit"]:active {
 #h1-login-form {
 	margin-left: 26%;
 	color: rgb(129, 129, 241);
+}
+
+#h2-login-formr {
+	color: var(--grey-color);
+	font-weight: 500;
+	/* text-align: center; */
+	letter-spacing: 0.1em;
 }
