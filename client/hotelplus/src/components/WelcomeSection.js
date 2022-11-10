@@ -140,7 +140,7 @@ function WelcomeSection() {
 								<div className="more-icon">
 									<CameraIndoorTwoToneIcon
 										className="icons-more"
-										style={{ width: "100px", fontWeight: 300 }}
+										style={{ width: "100px", fontWeight: 100, fontSize: "2em" }}
 									/>
 									<p>Under protection</p>
 								</div>

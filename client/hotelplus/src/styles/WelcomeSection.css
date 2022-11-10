@@ -158,7 +158,7 @@
 	bottom: 0;
 	width: 60%;
 	margin: 0 auto;
-	left: 20%;
+	left: 21%;
 	z-index: 8;
 }
 .inner-more {
@@ -171,15 +171,16 @@
 }
 
 .icons-more {
-	height: 100px !important;
-	font-weight: 300 !important;
+	height: 90px !important;
+	font-weight: 100 !important;
+	-webkit-text-stroke: 2px white !important;
 }
 .includes {
 	background-color: var(--dark-color);
 	justify-content: center;
 	text-align: center;
 	padding: 20px;
-	border: 1px solid gold;
+	border: 3px solid #f3efef;
 	border-radius: 5px;
 }
 .more-icon > p {
