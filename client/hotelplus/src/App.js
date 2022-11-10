@@ -1,9 +1,8 @@
 import "./App.css";
-import HomePage from "./components/HomePage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import WelcomeSection from "./components/WelcomeSection";
-import LogIn from "./components/LogIn";
 import Footer from "./components/Footer";
+import HomePage from "./components/pages/HomePage";
 function App() {
 	return (
 		<>
