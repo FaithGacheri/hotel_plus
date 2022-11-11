@@ -24,8 +24,24 @@ function Registration() {
 			email: user.email,
 			phoneNumber: user.phoneNumber,
 			password: user.password,
+			confirmPassword: user.confirmPassword,
 			gender: user.gender,
 		};
+
+		fetch("http://localhost:7000/users", {
+			method: "POST",
+			body: JSON.stringify({
+				full_name: userAccount.fullName,
+				user_name: userAccount.userName,
+				email: userAccount.email,
+				phone_number: userAccount.phoneNumber,
+				password: userAccount.password,
+				confirm_password: userAccount.confirmPassword,
+			}),
+			headers: {
+				"Content-Type": "application/json",
+			},
+		});
 		setUser({
 			fullName: "",
 			userName: "",
@@ -33,8 +49,13 @@ function Registration() {
 			phoneNumber: "",
 			password: "",
 			confirmPassword: "",
+		}).then((res) => {
+			if (res.ok) {
+				alert("User registered successfully");
+			} else {
+				throw new Error("Something went wrong");
+			}
 		});
-		console.log(userAccount);
 	};
 
 	return (

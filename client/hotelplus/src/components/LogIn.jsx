@@ -15,11 +15,11 @@ function LogIn() {
 			email: user.email,
 			password: user.password,
 		};
+
 		setUserLogin({
 			email: "",
 			password: "",
 		});
-		console.log(userAccount);
 	};
 	return (
 		<div class="box">
