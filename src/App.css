@@ -12,14 +12,11 @@
 		max-width: 1290px !important;
 		margin: auto;
 		height: 100vh;
-		background-color: var(--primary-color);
+		background-color: var(--dark-color);
 		color: var(--light-color);
 	}
 }
 * {
 	padding: 0;
 	margin: 0;
-}
-#container{
-	background-color: var(--primary-color);
 }

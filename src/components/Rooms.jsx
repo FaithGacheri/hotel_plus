@@ -1,8 +1,10 @@
 import React from 'react'
 import '../styles/Room.css'
-import '../styles/WelcomeSection.css'
-import Room from './Room';
-import rooms from './roomdata'
+import Room from './Room'
+import rooms from './roomdata.js'
+
+
+
 
 function Rooms() {
   console.log(rooms)
