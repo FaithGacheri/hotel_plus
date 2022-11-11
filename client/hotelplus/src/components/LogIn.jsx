@@ -1,6 +1,6 @@
 import React from "react";
 
-function LogIn() {
+function LogIn(props) {
 	const [user, setUserLogin] = React.useState({
 		email: "",
 		password: "",
@@ -20,6 +20,8 @@ function LogIn() {
 			email: "",
 			password: "",
 		});
+
+		props.onsaveLoginUser(userAccount);
 	};
 	return (
 		<div class="box">

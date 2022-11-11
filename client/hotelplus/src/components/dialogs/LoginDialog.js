@@ -5,13 +5,31 @@ import LogIn from "../LogIn";
 
 export default function AlertDialog() {
 	const [open, setOpen] = React.useState(false);
+	const [users, setUsers] = React.useState([]);
+	React.useEffect(() => {
+		getAllRooms();
+	}, []);
 
+	const getAllRooms = async () => {
+		try {
+			const res = await fetch("http://localhost:7000/users#");
+			const data = await res.json();
+			setUsers(data);
+		} catch (err) {
+			console.log(err);
+		}
+	};
 	const handleClickOpen = () => {
 		setOpen(true);
 	};
 
 	const handleClose = () => {
 		setOpen(false);
+	};
+
+	// console.log(users);
+	const filterUser = (data) => {
+		console.log("This is our data after filtering", data);
 	};
 
 	return (
@@ -26,7 +44,7 @@ export default function AlertDialog() {
 				aria-describedby="alert-dialog-description"
 			>
 				<DialogContent>
-					<LogIn />
+					<LogIn onsaveLoginUser={filterUser} />
 				</DialogContent>
 			</Dialog>
 		</div>
