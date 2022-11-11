@@ -9,7 +9,10 @@ function Room({id,image,description,perNightPrice}) {
         <h5>{description}</h5>
         <p>starts from Ksh {perNightPrice}/night</p>
         <button>Book Now</button>
+        
     </div>
+    
+    
   )
 }
 

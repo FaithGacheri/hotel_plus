@@ -1,6 +1,8 @@
 import React from 'react'
 import Rooms from './Rooms'
 
+// import Rooms from './Rooms'
+
 function HomePage() {
   return (
     <div>
@@ -10,8 +12,7 @@ function HomePage() {
         {/* Ian Component */}
 
         {/* Imanuels Component */}
-        <Rooms />
-
+         <Rooms /> 
         {/* Joseph Component */}
 
         {/* Faith Component */}
