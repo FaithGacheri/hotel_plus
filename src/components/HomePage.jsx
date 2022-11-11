@@ -1,6 +1,6 @@
 import React from 'react'
 import Rooms from './Rooms'
-// import AboutPage from './AboutPage';
+import About from './About'
 import Slider from './Slider'
 
 
@@ -10,10 +10,10 @@ function HomePage() {
     <div>
        
 
-
+         <About />  
          <Rooms /> 
      
-        <Slider />
+         <Slider />
      
 
     </div>
