@@ -12,6 +12,8 @@ function Registration() {
 		gender: "",
 	});
 
+	const [isLoading, setIsLoading] = React.useState(false);
+
 	const onChange = (e) => {
 		setUser({ ...user, [e.target.name]: e.target.value });
 	};
@@ -42,6 +44,7 @@ function Registration() {
 				"Content-Type": "application/json",
 			},
 		});
+		setIsLoading(true);
 		setUser({
 			fullName: "",
 			userName: "",
@@ -50,10 +53,17 @@ function Registration() {
 			password: "",
 			confirmPassword: "",
 		}).then((res) => {
+			setIsLoading(false);
 			if (res.ok) {
 				alert("User registered successfully");
 			} else {
-				throw new Error("Something went wrong");
+				return res.json().then((data) => {
+					let errorMessage = "Authentication failed!";
+					if (data && data.error && data.error.message) {
+						errorMessage = data.error.message;
+					}
+					alert(errorMessage);
+				});
 			}
 		});
 	};
@@ -168,6 +178,7 @@ function Registration() {
 						<label for="other">Other</label>
 					</div>
 				</div>
+
 				<input type="submit" value="Register" id="login-input"></input>
 			</form>
 		</div>
