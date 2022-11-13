@@ -8,14 +8,14 @@
 }
 
 button {
-background: #f76926;
-padding-left: 30px;
-padding-right: 30px;
-padding-top: 5px;
-padding-bottom: 5px;
-margin: 6px;
-color: #ffffff;
-border-radius: 10px;
+	background: #f76926;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 6px;
+	color: #ffffff;
+	border-radius: 10px;
 }
 
 #room-container {
@@ -23,48 +23,46 @@ border-radius: 10px;
 	width: 100%;
 	grid-template-columns: auto auto auto auto;
 	/* background-color: BLUE; */
-
 }
 .rooms {
-background-color: #ffffff !important;
-height: 100vh !important;
+	background-color: #ffffff !important;
+	/* height: 100vh !important; */
 }
 
 img {
 	border-radius: 5px;
-	width:95%;
+	width: 95%;
 	height: 70%;
-	
 }
-h5,h1,p,h2 .par {
+h5,
+h1,
+p,
+h2 .par {
 	color: #202020 !important;
 }
 
 .p {
-	padding: 17px;	
+	padding: 17px;
 }
 
-h1, .p {
+h1,
+.p {
 	text-align: center;
 }
 
-button:hover {
+/* button:hover {
 	padding-right: 30px;
-	background:var(--primary-color);
-
-  }
+	background: var(--primary-color);
+} */
 
 .room {
-	background-color:var(--light-color) ;
+	background-color: var(--light-color);
 	border-radius: 5px;
 	padding: 5px;
 	margin: 9px;
 	width: 300px;
-
-
 }
 
 .room:hover {
-	transform:scale(1.2);
+	transform: scale(1.2);
 }
-  

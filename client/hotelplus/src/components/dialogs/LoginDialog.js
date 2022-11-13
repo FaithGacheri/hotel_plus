@@ -4,7 +4,7 @@ import DialogContent from "@mui/material/DialogContent";
 import LogIn from "../LogIn";
 import { useNavigate } from "react-router-dom";
 
-export default function AlertDialog() {
+export default function AlertDialog(props) {
 	const [open, setOpen] = React.useState(false);
 	const [users, setUsers] = React.useState([]);
 	const history = useNavigate();
@@ -45,8 +45,10 @@ export default function AlertDialog() {
 		console.log(userLogedIn);
 	};
 	const handleLogin = () => {
-		history("/about");
+		history("/profile");
 	};
+	// console.log(user);
+	props.onSaveUser(user);
 
 	return (
 		<div>

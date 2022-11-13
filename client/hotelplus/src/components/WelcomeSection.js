@@ -13,6 +13,7 @@ import HeatPumpTwoToneIcon from "@mui/icons-material/HeatPumpTwoTone";
 import CameraIndoorTwoToneIcon from "@mui/icons-material/CameraIndoorTwoTone";
 // import Button from "@mui/material/Button";
 function WelcomeSection() {
+	const [showComponent, setShowComponent] = React.useState(false);
 	const images = [
 		{
 			url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -27,6 +28,17 @@ function WelcomeSection() {
 			url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
 		},
 	];
+
+	const handleHideComponent = (user) => {
+		// console.log("User is here", user);
+		if (!user) {
+			setShowComponent(false);
+		} else {
+			setShowComponent(true);
+		}
+	};
+
+	console.log("showComponent", showComponent);
 	return (
 		<div className="welcome-section">
 			<div className="navbar">
@@ -81,8 +93,7 @@ function WelcomeSection() {
 						you need it. Dont't Worry about the Quality of the service.
 					</p>
 					<div className="user-hotel">
-						<AlertDialog />
-
+						<AlertDialog onSaveUser={handleHideComponent} />
 						<RegistrationDialog />
 					</div>
 				</div>

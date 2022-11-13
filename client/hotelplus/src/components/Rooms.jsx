@@ -32,7 +32,7 @@ function Rooms() {
 					return (
 						<Room
 							id={room.id}
-							image={room.image}
+							image={room.image_url}
 							description={room.description}
 							perNightPrice={room.description}
 						/>
