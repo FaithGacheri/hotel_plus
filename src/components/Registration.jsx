@@ -12,6 +12,8 @@ function Registration() {
 		gender: "",
 	});
 
+	const [isLoading, setIsLoading] = React.useState(false);
+
 	const onChange = (e) => {
 		setUser({ ...user, [e.target.name]: e.target.value });
 	};
@@ -24,8 +26,25 @@ function Registration() {
 			email: user.email,
 			phoneNumber: user.phoneNumber,
 			password: user.password,
+			confirmPassword: user.confirmPassword,
 			gender: user.gender,
 		};
+
+		fetch("http://localhost:7000/users", {
+			method: "POST",
+			body: JSON.stringify({
+				full_name: userAccount.fullName,
+				user_name: userAccount.userName,
+				email: userAccount.email,
+				phone_number: userAccount.phoneNumber,
+				password: userAccount.password,
+				confirm_password: userAccount.confirmPassword,
+			}),
+			headers: {
+				"Content-Type": "application/json",
+			},
+		});
+		setIsLoading(true);
 		setUser({
 			fullName: "",
 			userName: "",
@@ -33,8 +52,20 @@ function Registration() {
 			phoneNumber: "",
 			password: "",
 			confirmPassword: "",
+		}).then((res) => {
+			setIsLoading(false);
+			if (res.ok) {
+				alert("User registered successfully");
+			} else {
+				return res.json().then((data) => {
+					let errorMessage = "Authentication failed!";
+					if (data && data.error && data.error.message) {
+						errorMessage = data.error.message;
+					}
+					alert(errorMessage);
+				});
+			}
 		});
-		console.log(userAccount);
 	};
 
 	return (
@@ -147,6 +178,7 @@ function Registration() {
 						<label for="other">Other</label>
 					</div>
 				</div>
+
 				<input type="submit" value="Register" id="login-input"></input>
 			</form>
 		</div>
