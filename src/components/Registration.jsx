@@ -30,7 +30,7 @@ function Registration() {
 			gender: user.gender,
 		};
 
-		fetch("http://localhost:7000/users", {
+		fetch("https://hotelplus-backend-api.herokuapp.com/users", {
 			method: "POST",
 			body: JSON.stringify({
 				full_name: userAccount.fullName,

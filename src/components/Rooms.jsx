@@ -11,7 +11,7 @@ function Rooms() {
 
 	const getAllRooms = async () => {
 		try {
-			const res = await fetch("http://localhost:7000/hotels");
+			const res = await fetch("https://hotelplus-backend-api.herokuapp.com/hotels");
 			const data = await res.json();
 			setRooms(data);
 		} catch (err) {

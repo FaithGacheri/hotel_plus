@@ -1,7 +1,10 @@
 import React from "react";
+import Rooms from "../Rooms";
 
 function RoomsPage() {
-	return <div>RoomsPage</div>;
+	return <div>
+		<Rooms />
+	</div>;
 }
 
 export default RoomsPage;
