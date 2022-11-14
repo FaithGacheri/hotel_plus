@@ -93,9 +93,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     
 ## Live Netlify Page Link.
 
-.......
+Frontend link: https://splendorous-alfajores-57783a.netlify.app/
+Backend API: https://hotelplus-backend-api.herokuapp.com/rooms
 
 Copyright (c) 2022 Faith Gacheri and others...
 
 
-[Go Back to the top](#portfolio)r
+[Go Back to the top](#portfolio)
